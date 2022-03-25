@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Gotop
+ * @package     Gotop_Landing
+ * @author      Evi <grebec.v@gotop.com.ua>
+ */
+-->
+<config>
+    <modules>
+        <Gotop_Landing>
+            <version>1.0.1</version>
+        </Gotop_Landing>
+    </modules>
+    <global>
+        <resources>
+            <gotop_landing_setup>
+                <setup>
+                    <module>Gotop_Landing</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </gotop_landing_setup>
+        </resources>
+    </global>
+</config>

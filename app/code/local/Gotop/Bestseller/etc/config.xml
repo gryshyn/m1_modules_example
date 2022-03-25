@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gotop_Bestseller>
+            <version>0.1.0</version>
+        </Gotop_Bestseller>
+    </modules>
+    <global>
+        <models>
+            <gotop_bestseller>
+                <class>Gotop_Bestseller_Model</class>
+                <resourceModel>gotop_bestseller_resource</resourceModel>
+            </gotop_bestseller>
+            <gotop_bestseller_resource>
+                <class>Gotop_Bestseller_Model_Resource</class>
+            </gotop_bestseller_resource>
+        </models>
+        <blocks>
+            <gotop_bestseller>
+                <class>Gotop_Bestseller_Block</class>
+            </gotop_bestseller>
+        </blocks>
+        <helpers>
+            <gotop_bestseller>
+                <class>Gotop_Bestseller_Helper</class>
+            </gotop_bestseller>
+        </helpers>
+        <resources>
+            <gotop_bestseller_setup>
+                <setup>
+                    <module>Gotop_Bestseller</module>
+                </setup>
+            </gotop_bestseller_setup>
+        </resources>
+    </global>
+</config>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gotop_RemoveLink>
+            <version>0.1.0</version>
+        </Gotop_RemoveLink>
+    </modules>
+    <global>
+        <blocks>
+            <gotop_removelink>
+                <class>Gotop_RemoveLink_Block</class>
+            </gotop_removelink>
+            <page>
+                <rewrite>
+                    <template_links_block>Gotop_RemoveLink_Block_Page_Template_Links_Block</template_links_block>
+                </rewrite>
+            </page>
+        </blocks>
+        <helpers>
+            <gotop_removelink>
+                <class>Gotop_RemoveLink_Helper</class>
+            </gotop_removelink>
+        </helpers>
+    </global>
+</config>

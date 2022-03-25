@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gotop_RecommendedProductsById>
+            <version>1.0.0</version>
+        </Gotop_RecommendedProductsById>
+    </modules>
+    <global>
+        <models>
+            <gotop_recommendedproductsbyid>
+                <class>Gotop_RecommendedProductsById_Model</class>
+                <resourceModel>gotop_recommendedproductsbyid_resource</resourceModel>
+            </gotop_recommendedproductsbyid>
+            <gotop_recommendedproductsbyid_resource>
+                <class>Gotop_RecommendedProductsById_Model_Resource</class>
+            </gotop_recommendedproductsbyid_resource>
+        </models>
+        <blocks>
+            <gotop_recommendedproductsbyid>
+                <class>Gotop_RecommendedProductsById_Block</class>
+            </gotop_recommendedproductsbyid>
+        </blocks>
+        <helpers>
+            <gotop_recommendedproductsbyid>
+                <class>Gotop_RecommendedProductsById_Helper</class>
+            </gotop_recommendedproductsbyid>
+        </helpers>
+        <resources>
+            <gotop_recommendedproductsbyid_setup>
+                <setup>
+                    <module>Gotop_RecommendedProductsById</module>
+                </setup>
+            </gotop_recommendedproductsbyid_setup>
+        </resources>
+    </global>
+</config>

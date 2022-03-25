@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gotop_ShippingMethods>
+            <version>0.1.0</version>
+        </Gotop_ShippingMethods>
+    </modules>
+    <global>
+        <models>
+            <gotop_shippingmethods>
+                <class>Gotop_ShippingMethods_Model</class>
+            </gotop_shippingmethods>
+        </models>
+        <helpers>
+            <gotop_shippingmethods>
+                <class>Gotop_ShippingMethods_Helper</class>
+            </gotop_shippingmethods>
+        </helpers>
+    </global>
+    <default>
+        <carriers>
+            <gotop_shippingmethods>
+                <active>1</active>
+                <sort_order>10</sort_order>
+                <model>gotop_shippingmethods/carrier</model>
+                <title>Gotop | Доставка "Новая почта"</title>
+                <sallowspecific>0</sallowspecific>
+            </gotop_shippingmethods>
+            <gotop_shippingmethodscourier>
+                <active>1</active>
+                <sort_order>11</sort_order>
+                <model>gotop_shippingmethods/carriercourier</model>
+                <title>Gotop | Доставка "Доставка курьером"</title>
+                <sallowspecific>0</sallowspecific>
+            </gotop_shippingmethodscourier>
+        </carriers>
+    </default>
+</config>

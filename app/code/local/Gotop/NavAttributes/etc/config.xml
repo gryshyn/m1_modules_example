@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Gotop_NavAttributes>
+            <version>1.0.0</version>
+        </Gotop_NavAttributes>
+    </modules>
+    <global>
+        <models>
+            <gotop_navattributes>
+                <class>Gotop_NavAttributes_Model</class>
+            </gotop_navattributes>
+            <catalog>
+                <rewrite>
+                    <observer>Gotop_NavAttributes_Model_Observer</observer>
+                </rewrite>
+            </catalog>
+        </models>
+    </global>
+</config>

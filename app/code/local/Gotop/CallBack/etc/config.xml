@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gotop_CallBack>
+            <version>0.1.0</version>
+        </Gotop_CallBack>
+    </modules>
+    <global>
+        <models>
+            <gotop_callback>
+                <class>Gotop_CallBack_Model</class>
+                <resourceModel>gotop_callback_resource</resourceModel>
+            </gotop_callback>
+            <gotop_callback_resource>
+                <class>Gotop_CallBack_Model_Resource</class>
+            </gotop_callback_resource>
+        </models>
+        <blocks>
+            <gotop_callback>
+                <class>Gotop_CallBack_Block</class>
+            </gotop_callback>
+        </blocks>
+        <helpers>
+            <gotop_callback>
+                <class>Gotop_CallBack_Helper</class>
+            </gotop_callback>
+        </helpers>
+        <resources>
+            <gotop_callback_setup>
+                <setup>
+                    <module>Gotop_CallBack</module>
+                </setup>
+            </gotop_callback_setup>
+        </resources>
+        <template>
+            <email>
+                <gotop_callback_email_email_template translate="label" module="gotop_callback">
+                    <label>Callback Form</label>
+                    <file>gotop_callback_form.html</file>
+                    <type>text</type>
+                </gotop_callback_email_email_template>
+                <gotop_callback_email_email_faq translate="label" module="gotop_callback">
+                    <label>FAQ Form</label>
+                    <file>gotop_callback_faq.html</file>
+                    <type>text</type>
+                </gotop_callback_email_email_faq>
+                <gotop_callback_email_email_oneclick translate="label" module="gotop_callback">
+                    <label>One Click Order Form</label>
+                    <file>gotop_callback_oneclick.html</file>
+                    <type>text</type>
+                </gotop_callback_email_email_oneclick>
+            </email>
+        </template>
+    </global>
+    <frontend>
+        <routers>
+            <gotop_callback>
+                <use>standard</use>
+                <args>
+                    <frontName>gotop_callback</frontName>
+                    <module>Gotop_CallBack</module>
+                </args>
+            </gotop_callback>
+            <contacts>
+                <args>
+                    <modules>
+                        <gotop_callback before="Mage_Contacts">Gotop_CallBack_Contacts</gotop_callback>
+                    </modules>
+                </args>
+            </contacts>
+        </routers>
+    </frontend>
+    <default>
+        <gotop_callback>
+            <email>
+                <email_template>gotop_callback_email_email_template</email_template>
+                <email_faq>gotop_callback_email_email_faq</email_faq>
+                <email_oneclick>gotop_callback_email_email_oneclick</email_oneclick>
+            </email>
+        </gotop_callback>
+    </default>
+</config>
